@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
+import sadOwl from "../img/sadOwl.png";
 // import Jumbotron from "../components/Jumbotron";
 
 function NoMatch() {
@@ -10,7 +11,7 @@ function NoMatch() {
           {/* <Jumbotron> */}
           <div class="container">
             <div className="jumbotron">
-              <div className="text-center"><i className="far fa-frown" style={{ color: "#24292e", fontSize: "48px" }}></i></div>
+              <div className="text-center"><img src={sadOwl} style={{ width: "7%", height: "auto" }} alt="Sad Owl" /></div>
               <br />
               <h1 className="text-center">404 Not Found<p> </p><p><small className="text-center"> Oh noes everything broke</small></p></h1>
               <p className="text-center">Try pressing the back button or clicking on this button.</p>

@@ -5,10 +5,10 @@
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    letter-spacing: 0.5;
+    letter-spacing: 1.5;
 }
 
 img {
-    width: 3%;
+    width: 2%;
     height: auto;
 }
