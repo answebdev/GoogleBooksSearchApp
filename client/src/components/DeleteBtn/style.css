@@ -1,4 +1,7 @@
 .delete-btn {
   float: right;
-  color: #e74944;
+  color: #24292e!important;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5;
+
 }

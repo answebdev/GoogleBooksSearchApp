@@ -1,0 +1,14 @@
+.navbar {
+    background-color: #24292e!important;
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5;
+}
+
+img {
+    width: 3%;
+    height: auto;
+}
