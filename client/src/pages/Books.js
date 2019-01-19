@@ -65,32 +65,39 @@ class Books extends Component {
               <h1 className="display-4" id="google-lead">Google Books Search App</h1>
               <p className="lead" id="motto">Search for and Save Books of Interest</p>
             </Jumbotron>
+            <div className="card">
+  <h5 className="card-header" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>Book Search</h5>
+  <div className="card-body">
             <form>
-              <Input
+              <Input style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
                 value={this.state.title}
                 onChange={this.handleInputChange}
                 name="title"
                 placeholder="Title (required)"
               />
-              <Input
+              <Input style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
                 value={this.state.author}
                 onChange={this.handleInputChange}
                 name="author"
                 placeholder="Author (required)"
               />
-              <TextArea
+              <TextArea style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
                 value={this.state.synopsis}
                 onChange={this.handleInputChange}
                 name="synopsis"
-                placeholder="Synopsis (Optional)"
+                placeholder="Synopsis (optional)"
               />
-              <FormBtn
+              <FormBtn style={{ fontFamily: "Roboto", letterSpacing: "0.5", }}
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}
               >
-                Submit Book
+                <i class="far fa-paper-plane"></i> Submit Book
               </FormBtn>
             </form>
+            </div>
+            </div>
+            <br />
+            <br />
           </Col>
           <Col size="md-12 sm-12">
             <Jumbotron>
@@ -101,7 +108,7 @@ class Books extends Component {
                 {this.state.books.map(book => (
                   <ListItem key={book._id}>
                     <Link to={"/books/" + book._id}>
-                      <strong>
+                      <strong style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>
                         {book.title} by {book.author}
                       </strong>
                     </Link>

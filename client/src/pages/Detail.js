@@ -22,7 +22,7 @@ class Detail extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>
+              <h1 style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>
                 {this.state.book.title} by {this.state.book.author}
               </h1>
             </Jumbotron>
@@ -31,8 +31,8 @@ class Detail extends Component {
         <Row>
           <Col size="md-12 md-offset-1">
             <article>
-              <h1>Synopsis</h1><p></p>
-              <p>
+              <h1 style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>Synopsis</h1><p></p>
+              <p style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>
                 {this.state.book.synopsis}
               </p>
             </article>
@@ -40,7 +40,7 @@ class Detail extends Component {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/" style={{color: "#3D6CAD", textDecoration: "none" }}><i class="fas fa-arrow-circle-left"></i> Back to Authors</Link>
+            <Link to="/" style={{ fontFamily: "Roboto", letterSpacing: "0.5", color: "#3D6CAD", textDecoration: "none" }}><i class="fas fa-arrow-circle-left"></i> Back to Authors</Link>
           </Col>
         </Row>
       </Container>
