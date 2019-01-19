@@ -29,9 +29,9 @@ class Detail extends Component {
           </Col>
         </Row>
         <Row>
-          <Col size="md-10 md-offset-1">
+          <Col size="md-12 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
+              <h1>Synopsis</h1><p></p>
               <p>
                 {this.state.book.synopsis}
               </p>
