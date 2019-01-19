@@ -1,0 +1,22 @@
+#error-jumbo {
+    background-image: url("https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    color: #000000;
+    text-shadow: none;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#google-lead,
+#results-lead {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5;
+    font-weight: 700;
+}
+
+#motto {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5;
+}

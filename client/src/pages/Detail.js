@@ -40,7 +40,7 @@ class Detail extends Component {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Authors</Link>
+            <Link to="/" style={{color: "#3D6CAD", textDecoration: "none" }}><i class="fas fa-arrow-circle-left"></i> Back to Authors</Link>
           </Col>
         </Row>
       </Container>

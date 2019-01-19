@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import './Pages.css';
 
 class Books extends Component {
   state = {
@@ -57,9 +58,12 @@ class Books extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-12">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              {/* <h1>Google Books Search App</h1>
+              <p>Search for and Save Books of Interest</p> */}
+              <h1 className="display-4" id="google-lead">Google Books Search App</h1>
+              <p className="lead" id="motto">Search for and Save Books of Interest</p>
             </Jumbotron>
             <form>
               <Input
@@ -88,9 +92,9 @@ class Books extends Component {
               </FormBtn>
             </form>
           </Col>
-          <Col size="md-6 sm-12">
+          <Col size="md-12 sm-12">
             <Jumbotron>
-              <h1>Books On My List</h1>
+            <h1 className="display-4" id="results-lead">Search Results</h1>
             </Jumbotron>
             {this.state.books.length ? (
               <List>
@@ -106,8 +110,8 @@ class Books extends Component {
                 ))}
               </List>
             ) : (
-              <h3>No Results to Display</h3>
-            )}
+                <h3>No Results to Display</h3>
+              )}
           </Col>
         </Row>
       </Container>
