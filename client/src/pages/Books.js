@@ -122,7 +122,7 @@ class Books extends Component {
               </div>
               </div>
             ) : (
-                <h3>No Results to Display</h3>
+                <h3 style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>No Results to Display</h3>
               )}
           </Col>
         </Row>

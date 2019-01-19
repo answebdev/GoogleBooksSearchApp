@@ -14,7 +14,7 @@ function NoMatch() {
             <div className="jumbotron" id="error-jumbo">
               <div className="text-center"><img src={sadOwl} style={{ width: "7%", height: "auto" }} alt="Sad Owl" /></div>
               <br />
-              <h1 className="text-center">404 Not Found<p> </p><p><small className="text-center"> Oh noes everything broke</small></p></h1>
+              <h1 className="text-center" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>404 Not Found<p> </p><p><small className="text-center"> Oh noes everything broke</small></p></h1>
               <p className="text-center">Try pressing the back button or clicking on this button.</p>
               <p className="text-center"><a class="btn btn-primary" style={{ fontFamily: "Roboto", fontWeight: "400", letterSpacing: "0.5", backgroundColor: "#3D6CAD", border: "#ffffff" }} href="/"><i className="fa fa-home"></i> Take Me Home</a></p>
             </div>
