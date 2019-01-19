@@ -66,44 +66,47 @@ class Books extends Component {
               <p className="lead" id="motto">Search for and Save Books of Interest</p>
             </Jumbotron>
             <div className="card">
-  <h5 className="card-header" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>Book Search</h5>
-  <div className="card-body">
-            <form>
-              <Input style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
-                value={this.state.title}
-                onChange={this.handleInputChange}
-                name="title"
-                placeholder="Title (required)"
-              />
-              <Input style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
-                value={this.state.author}
-                onChange={this.handleInputChange}
-                name="author"
-                placeholder="Author (required)"
-              />
-              <TextArea style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
-                value={this.state.synopsis}
-                onChange={this.handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (optional)"
-              />
-              <FormBtn style={{ fontFamily: "Roboto", letterSpacing: "0.5", }}
-                disabled={!(this.state.author && this.state.title)}
-                onClick={this.handleFormSubmit}
-              >
-                <i class="far fa-paper-plane"></i> Submit Book
+              <h5 className="card-header" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>Book Search</h5>
+              <div className="card-body">
+                <form>
+                  <Input style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
+                    value={this.state.title}
+                    onChange={this.handleInputChange}
+                    name="title"
+                    placeholder="Title (required)"
+                  />
+                  <Input style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
+                    value={this.state.author}
+                    onChange={this.handleInputChange}
+                    name="author"
+                    placeholder="Author (required)"
+                  />
+                  <TextArea style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}
+                    value={this.state.synopsis}
+                    onChange={this.handleInputChange}
+                    name="synopsis"
+                    placeholder="Synopsis (optional)"
+                  />
+                  <FormBtn style={{ fontFamily: "Roboto", letterSpacing: "0.5", }}
+                    disabled={!(this.state.author && this.state.title)}
+                    onClick={this.handleFormSubmit}
+                  >
+                    <i class="far fa-paper-plane"></i> Submit Book
               </FormBtn>
-            </form>
-            </div>
+                </form>
+              </div>
             </div>
             <br />
             <br />
           </Col>
           <Col size="md-12 sm-12">
             <Jumbotron>
-            <h1 className="display-4" id="results-lead">Search Results</h1>
+              <h1 className="display-4" id="results-lead">Search Results</h1>
             </Jumbotron>
             {this.state.books.length ? (
+              <div className="card">
+              <h5 className="card-header" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>Results</h5>
+              <div className="card-body">
               <List>
                 {this.state.books.map(book => (
                   <ListItem key={book._id}>
@@ -116,6 +119,8 @@ class Books extends Component {
                   </ListItem>
                 ))}
               </List>
+              </div>
+              </div>
             ) : (
                 <h3>No Results to Display</h3>
               )}

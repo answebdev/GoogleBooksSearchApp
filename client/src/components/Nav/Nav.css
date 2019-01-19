@@ -4,6 +4,7 @@
 
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
+    text-transform: none;
     font-size: 20px;
     letter-spacing: 1.5;
 }
