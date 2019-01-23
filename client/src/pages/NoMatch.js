@@ -11,7 +11,7 @@ function NoMatch() {
         <Col size="md-12">
           {/* <Jumbotron> */}
           <div class="container">
-            <div className="jumbotron" id="error-jumbo">
+            <div className="jumbotron" id="error-jumbo" style={{ marginTop: "40px" }}>
               <div className="text-center"><img src={sadOwl} style={{ width: "7%", height: "auto" }} alt="Sad Owl" /></div>
               <br />
               <h1 className="text-center" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>404 Not Found<p> </p><p><small className="text-center"> Oh noes everything broke</small></p></h1>

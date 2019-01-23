@@ -102,7 +102,7 @@ class Books extends Component {
               <h1 className="display-4" id="results-lead">Search Results</h1>
             </Jumbotron>
             {this.state.books.length ? (
-              <div className="card">
+              <div className="card" style={{marginBottom: "100px" }}>
                 <h5 className="card-header" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>Results</h5>
                 <div className="card-body">
                   <List>
