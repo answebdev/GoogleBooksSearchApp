@@ -25,6 +25,6 @@ https://google-books-search-react-app.herokuapp.com/
 
 # Screenshots
 
-![Screenshot 01](screenshots/GoogleBooksSearchApp - screenshot01 "Search Page")
+![Screenshot 01](screenshots/GoogleBooksSearchApp-screenshot01 "Search Page")
 
-![Screenshot 02](screenshots/GoogleBooksSearchApp - screenshot02 "Results Page")
+![Screenshot 02](screenshots/GoogleBooksSearchApp-screenshot02 "Results Page")
