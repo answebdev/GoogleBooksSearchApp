@@ -21,10 +21,10 @@ GoogleBookSearchApp uses React to create React components, works with helper/uti
 
 GoogleBooksSearchApp is deployed to Heroku. Please check it out here:
 
-
+https://google-books-search-react-app.herokuapp.com/
 
 # Screenshots
 
-![Screenshot 01](screenshots/GoogleBooksSearchApp - screenshot01.jpg "Search Page")
+![Screenshot 01](screenshots/GoogleBooksSearchApp - screenshot01 "Search Page")
 
-![Screenshot 02](screenshots/GoogleBooksSearchApp - screenshot01.jpg "Results Page")
+![Screenshot 02](screenshots/GoogleBooksSearchApp - screenshot02 "Results Page")
