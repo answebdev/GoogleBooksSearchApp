@@ -60,8 +60,6 @@ class Books extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              {/* <h1>Google Books Search App</h1>
-              <p>Search for and Save Books of Interest</p> */}
               <h1 className="display-4" id="google-lead">Google Books Search App</h1>
               <p className="lead" id="motto">Search for and Save Books of Interest</p>
             </Jumbotron>
@@ -105,21 +103,21 @@ class Books extends Component {
             </Jumbotron>
             {this.state.books.length ? (
               <div className="card">
-              <h5 className="card-header" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>Results</h5>
-              <div className="card-body">
-              <List>
-                {this.state.books.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
-                      <strong style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>
-                        {book.title} by {book.author}
-                      </strong>
-                    </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
-                  </ListItem>
-                ))}
-              </List>
-              </div>
+                <h5 className="card-header" style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>Results</h5>
+                <div className="card-body">
+                  <List>
+                    {this.state.books.map(book => (
+                      <ListItem key={book._id}>
+                        <Link to={"/books/" + book._id}>
+                          <strong style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>
+                            {book.title} by {book.author}
+                          </strong>
+                        </Link>
+                        <DeleteBtn onClick={() => this.deleteBook(book._id)} />
+                      </ListItem>
+                    ))}
+                  </List>
+                </div>
               </div>
             ) : (
                 <h3 style={{ fontFamily: "Roboto", letterSpacing: "0.5" }}>No Results to Display</h3>
