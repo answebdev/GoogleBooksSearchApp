@@ -25,6 +25,6 @@ GoogleBooksSearchApp is deployed to Heroku. Please check it out here:
 
 # Screenshots
 
-![Screenshot 01](screenshots/GoogleBooksSearchApp - screenshot01.jpg "Search Page")
+![Screenshot 01](screenshots/GoogleBooksSearchApp - screenshot01.JPG "Search Page")
 
-![Screenshot 02](screenshots/GoogleBooksSearchApp - screenshot01.jpg "Results Page")
+![Screenshot 02](screenshots/GoogleBooksSearchApp - screenshot01.JPG "Results Page")
